@@ -3,3 +3,7 @@
 
 # gradle
 .gradle/
+
+/out
+/build
+/.gradle
