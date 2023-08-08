@@ -107,7 +107,7 @@ public class PostsApiControllerTest {
         String url = "http://localhost:" + port + "/api/v1/posts/" + updateId;
 
         //when
-        mvc.perform(put(url)
+        mvc.perform(post(url)
                         .contentType(MediaType.APPLICATION_JSON_UTF8)
                         .content(new ObjectMapper().writeValueAsString(requestDto)))
                 .andExpect(status().isOk());
